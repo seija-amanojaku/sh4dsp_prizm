@@ -1828,6 +1828,10 @@ pub mod sh4 {
     use crate::crust::libc::*;
     use core::ffi::*;
 
+    extern "C" {
+        pub fn getchar() -> c_int;
+    }
+
     #[derive(Clone, Copy)]
     pub struct CPUState {
         // Let's not worry about banked registers (they are only useful when dealing with
