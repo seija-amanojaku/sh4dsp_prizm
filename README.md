@@ -15,7 +15,7 @@ $ cd b/src/codegen
 $ git clone https://github.com/seija-amanojaku/sh4dsp_prizm # TODO!
 $ cd ../..
 $ make
-$ ./build/b -tlist
+$ ./build/b -t list
 ``` 
 
 ## Targets and Dependencies
