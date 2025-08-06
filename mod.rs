@@ -68,7 +68,7 @@ pub struct FAssembler {
 }
 
 pub unsafe fn get_apis(targets: *mut Array<TargetAPI>) {
-    da_append(targets, TargetAPI {
+    da_append(targets, TargetAPI::V1 {
         name: c!("sh4dsp-prizm"),
         file_ext: c!(".g3a"),
         new,
